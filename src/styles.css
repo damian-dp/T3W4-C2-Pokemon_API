@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#pokemonEncounterButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+}
+
+#pokemonEncounterButton:hover {
+    background-color: #ff9900;
+}
+
+#pokemonEncounterArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 80px; /* To ensure space for the fixed button */
+    width: 100%;
+    justify-items: center;
+}
+
+.pokemonCardEntry {
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.pokemonCardEntry img {
+    width: 100%;
+    height: auto;
+}
+
+.pokemonCardEntry h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.pokemonCardEntry h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.pokemonCardEntry ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pokemonCardEntry li {
+    font-size: 16px;
+    color: #333;
+}
+
+.pokemonCardEntry button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.pokemonCardEntry button:hover {
+    background-color: #ff9900;
+}
